@@ -4,6 +4,24 @@ import TrustBar from "../components/TrustBar.jsx";
 import Testimonials from "../components/Testimonials.jsx";
 import FAQ from "../components/FAQ.jsx";
 import FeatureSection from "../components/FeatureSection.jsx";
+import ServiceAreaMap from "../components/ServiceAreaMap.jsx";
+import ProcessFlow from "../components/ProcessFlow.jsx";
+import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
+
+const electricianFeatures = [
+	{
+		title: "Smart Lighting",
+		desc: "Mood scenes and automated schedules via Lutron/Rako.",
+	},
+	{
+		title: "Energy Efficient",
+		desc: "LED upgrades and solar integration systems.",
+	},
+	{
+		title: "Safety First",
+		desc: "Full EICR testing and consumer unit upgrades.",
+	},
+];
 ---
 
 <Layout title="Volt Master - Commercial & Residential Electrical">
@@ -96,26 +114,14 @@ import FeatureSection from "../components/FeatureSection.jsx";
 			title="Intelligent Living"
 			subtitle="Future-Ready Homes"
 			description="Control your home's lighting, heating, and security with a single touch. We specialise in full smart home integration, designing systems that are as intuitive as they are impressive."
-			features={[
-				{
-					title: "Smart Lighting",
-					desc: "Mood scenes and automated schedules via Lutron/Rako.",
-				},
-				{
-					title: "Energy Efficient",
-					desc: "LED upgrades and solar integration systems.",
-				},
-				{
-					title: "Safety First",
-					desc: "Full EICR testing and consumer unit upgrades.",
-				},
-			]}
+			features={electricianFeatures}
 			imageSrc="/hero.png"
 			quote="The lighting design completely changed the mood of our home. It feels like a different place at night."
 			author="Sarah & Tom, Islington"
 			align="right"
 		/>
 		<Testimonials client:visible />
+		<SafetyGuarantee client:visible />
 		<FAQ client:visible />
 	</main>
 </Layout>
