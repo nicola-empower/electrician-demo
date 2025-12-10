@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-primary: #171717;
+  /* Neutral 900 */
+  --color-secondary: #525252;
+  /* Neutral 600 */
+  --color-accent: #eab308;
+  /* Yellow 500 - Energy/Spark */
+  --color-volt: #3b82f6;
+  /* Blue 500 - Electric Arc */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-primary antialiased selection:bg-accent/30 selection:text-black;
+  }
+}
