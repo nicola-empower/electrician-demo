@@ -11,6 +11,7 @@
 
   --radius-button: 0px;
   /* rounded-none */
+  --color-primary: #0f172a;
 }
 
 @layer utilities {
